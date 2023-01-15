@@ -1,39 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
+    padding: 0px;
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans';
 }
 
-/* --------------------------------
- header and navigation styles
- ---------------------------------- */
+/* ----------Header and navigation styles------------- */
+
 nav{
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-   margin: 0px auto;
-   max-width: 1150px;
-}
-.nav-title{
-    font-weight: 700;
-    font-size: 45px;
-}
-nav ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto;
+    max-width: 1150px;
 }
-nav li{
-    list-style: none;
-    padding: 0 15px;
-}
+
 header{
     background: rgba(255, 144, 14, 0.1);
     padding-top: 20px;
     padding-bottom: 50px;
 }
-/*------------ hero section sart hare  ------------- */
+    
 
-.hero-section-content{
+
+/*------ Nav title------------------ */
+
+.nav-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+nav li{
+    list-style: none;
+    padding: 0 15px;
+    color: #424242;
+    
+}
+
+ /* -------------- hero section sart hare---------------*/
+
+ .hero-section-content{
     width: 862px;
     margin: 0 auto;
     display: flex;
@@ -41,8 +57,9 @@ header{
     justify-content: center;
     padding-top: 100px;
     text-align: center;
-}
-.hero-section-content h1{
+
+ }
+ .hero-section-content h1{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -51,23 +68,29 @@ header{
     text-align: center;
     width: 862px;
     color: #131313;
-}
-.hero-section-content p{
+ }
+
+ .hero-section-content p{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
+   line-height: 26px;
 
 
-    text-align: center;
-    width: 868px;
-   color: #727272;
-}
-.hero-section-conten div{
-    text-align: center;
-}
-.btn-primary{
+   text-align: center;
+   width: 868px;
+  color: #727272;
+ }
+ 
+ .hero-section-conten div{
+        text-align: center;
+        
+
+ }
+
+ 
+ .btn-primary{
     width: 180px;
     height: 64px;
     background-color: #FF900E;
@@ -79,27 +102,345 @@ header{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    
+ }
+
+ .btn-primary:hover{
+transform: scale(1.1);
+
+   
 }
-.banner img{
+ .banner img{
     width: 1150px;
-    height: 700px;
     margin: auto;
     display: block;
     padding-top: 50px;
+   
  }
 
- /*-------------- Quick list of Our Features -----------*/;
-.our-Features{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+ /* ------------Quick list of Our Features---------- */
+   
+ .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1150px;
+   margin: 20px auto;
+   padding-top: 65px;
+ }
+
+ .image-container{
+   display: grid;
+   grid-template-columns: auto auto;
+   width: 50%;
+   gap: 1rem;
+   border-radius: 10px;
+   
+   
+ }
+ .image-container img{
+  width: 300px;
+ }
+
+  .text-container{
+   justify-content: center;
+   align-items: center;
+   width: 500px;
+   
+  }
+
+ 
+  /* Features you will love & enjoy */
+
+  .love-features{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   max-width: 1150px;
+   margin: 20px auto;
+   padding-top: 65px;
+   
+   
+  }
+
+  .love_features-title-des h2{
+   width: 468px;
+height: 106px;
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 53px;
+
+/* Dark 01 */
+
+border-left: 5px solid #FF900E;
+padding-left: 10px;
+color: #131313;
+margin-bottom: 25px;
+
+  }
+
+  .love_features-title-des p{
+ 
+width: 586px;
+height: 78px;
+margin-bottom: 20px;
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+/* Dark 03 */
+
+color: #727272;
+
+  }
+  .love-image img{
+   width: 500px;
+  }
+
+  .love-box div{
+   width: 586px;
+   background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+margin-bottom: 20px;
+padding: 30px;
+  }
+.love-box div p{
+
+   font-family: 'Work Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+ line-height: 22px;
+   color: #727272;
+   margin-top: 15px;
+   
 }
-.our-Features .Features{
-    display: grid;
-    grid-template-columns: auto auto;
+.love-image {
+   position: relative;
 }
 
-.our-Features .our-Features-description{
-    font-weight: 668px;
+.love-image button{
+padding: 35px 60px;
+background: #FF900E;
+border-radius: 8px;
+color: #fff;
+position:  absolute;
+
+left: 0;
+bottom: 150px;
+border: none;
 }
+
+
+.love-image button span{
+   
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 70px;
+/* or 108% */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+/* -------------Some Facts------------ */
+
+  .some-facts{
+  padding-top: 50px;
+  max-width: 1150px;
+  margin: 10px auto;
+  }
+  .some-facts p{
+   width: 542px;
+   text-align: left;
+   padding-top: 24px;
+   line-height: 25px;
+
+  }
+
+  .some-facts-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 50px;
+   max-width: 1150px;
+   margin: 10px auto;
+   padding-bottom: 50px;
+ 
+  }
+  .some-facts-box div{
+   border: 1px solid #FF900E;
+   border-radius: 8px;
+   padding: 45px;
+   text-align: center;
+transition: all 0.3s;
+  }
+
+  .some-facts-box div:hover{
+   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+   cursor: pointer;
+   transform: scale(1.1);
+  }
+
+
+
+  .some-facts-box div h4{
+   padding: 10px 0;
+  }
+
+  /* -----------------Sponspors section style start------------ */
+
+  .Sponspors h2{
+   font-family: 'Work Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 45px;
+   text-align: center;
+   line-height: 53px;
+   color: #131313;
+  }
+
+  .Sponspors p{
+   font-weight: 400;
+   font-size: 16px;
+   text-align: center;
+   line-height: 26px;
+   color: #131313;
+   margin-top: 24px;
+   
+  }
+  .Sponspors-logo{
+   display: flex;
+   justify-content: space-between;
+   gap: 100px;
+   margin-top: 50px;
+   margin: 50px auto;
+   padding-bottom: 50px;
+ max-width: 1150px;
+ margin: 0 auto;
+  }
+
+  /* ------------Fotter saction style------------- */
+
+  .fotter{
+   padding: 50px 0;
+   background: #151414;
+  }
+
+  .fotter-text{
+   text-align: center;
+   border-radius: 10px;
+   color: #fff;
+  }
+
+  .fotter-text h2{
+   padding-bottom: 30px;
+  }
+  .fotter-text p{
+   padding-bottom: 30px;
+   line-height: 25px;
+  }
+  .fotter img{
+   margin: 0 10px;
+  }
+
+
+  @media only screen and (max-width: 650px) {
+   nav{
+    flex-direction: column;
+  }
+  .hero-section-content {
+   padding: 0 10px;
+   width: 100%;
+  }
+  .hero-section-content h1{
+  font-size: 30px;
+  width: 100%;
+}
+
+.hero-section-content p{
+   width: 100%;
+}
+.banner img{
+   width: 280px;
+   margin: auto;
+   display: block;
+   padding-top: 50px;
+  
+}
+.container {
+   
+   flex-direction: column !important;
+  
+}
+.image-container{
+   grid-template-columns: auto;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.text-container {
+width: 100%;
+padding: 20px;
+text-align: center;
+}
+.love-features{
+   flex-direction: column;
+   align-items: center;
+
+justify-content: center;
+}
+.love-box div{
+   width: 280px;
+   margin:10px  auto;
+}
+.love_features-title-des h2{
+width:100%;
+margin-left: 10px;
+}
+.love_features-title-des p{
+   width: 100%;
+   padding: 15px;
+   margin: 58px 0;
+}
+.love-image img {
+   width: 300px;
+  
+}
+.love-image button {
+bottom: 0;
+}
+.some-facts-box{
+flex-direction: column;
+gap: 10px;
+}
+.some-facts{
+   text-align: center;
+}
+.some-facts p{
+   text-align: center;
+   width: 100%;
+}
+.Sponspors-logo{
+   flex-direction: column;
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+}
+ }
