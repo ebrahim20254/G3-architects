@@ -3,7 +3,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/*  header and navigation styles */
+/* --------------------------------
+ header and navigation styles
+ ---------------------------------- */
 nav{
    display: flex;
    justify-content: space-between;
@@ -28,4 +30,76 @@ header{
     background: rgba(255, 144, 14, 0.1);
     padding-top: 20px;
     padding-bottom: 50px;
+}
+/*------------ hero section sart hare  ------------- */
+
+.hero-section-content{
+    width: 862px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+}
+.hero-section-content h1{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    width: 862px;
+    color: #131313;
+}
+.hero-section-content p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+
+    text-align: center;
+    width: 868px;
+   color: #727272;
+}
+.hero-section-conten div{
+    text-align: center;
+}
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+.banner img{
+    width: 1150px;
+    height: 700px;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+ }
+
+ /*-------------- Quick list of Our Features -----------*/;
+.our-Features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.our-Features .Features{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.our-Features .our-Features-description{
+    font-weight: 668px;
 }
